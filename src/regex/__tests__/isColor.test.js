@@ -16,5 +16,7 @@ describe("isColor", () => {
 
   test("returns false for invalid color", () => {
     expect(isColor("notacolor")).toBeFalsy();
+    expect(isColor("rgba(600, 87, 51, 0.5")).toBeFalsy();
+    expect(isColor("#FFFFFFF")).toBeFalsy();
   });
 });
